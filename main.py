@@ -44,6 +44,7 @@ def coffee_machine():
             if requirement > resources[resource]:
                 print(f"Sorry there is not enough {resource}")
                 out_of_stock.append(resource)
+                break
             else:
                 resources[resource] -= requirement
 
